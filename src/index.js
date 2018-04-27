@@ -95,11 +95,10 @@ function returnArgumentsArray() {
 
    console.log(newSum()) выведет 6
  */
-function bindFunction(fn) {
-    let args = [].slice.call(arguments, 1);
+function bindFunction(fn, ...allNeatArgs) {
 
     return function () {
-        return fn.apply(fn, args);
+        return fn.apply(fn, allNeatArgs);
     }
 }
 
