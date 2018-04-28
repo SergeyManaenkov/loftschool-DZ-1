@@ -78,6 +78,7 @@ function returnCounter(number = 0) {
  */
 function returnArgumentsArray() {
     return [...arguments];
+
 }
 
 /*
